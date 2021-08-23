@@ -49,6 +49,7 @@ def compare(user, computer):
         return "You win!"
     else:
         return "You lose!"
+    
 
 #Plays a single game
 def play_game():
@@ -88,7 +89,10 @@ def play_game():
 
     print(f"\tYour final hand: {user_cards}, final score: {user_score}")
     print(f"\tComputer's final hand: {computer_cards}, final score: {computer_score}")
+
+    print("-------------------------------------------------------------")
     print(compare(user_score, computer_score))
+    print("-------------------------------------------------------------")
 
 #Asks if the user wants to play again
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
